@@ -1,12 +1,12 @@
 {
-  "name": "flaskage",
+  "name": "{{{ application.name }}}",
   "version": "1.0.0",
   "homepage": "https://github.com/fgimian/flaskage",
   "authors": [
-    "Fotis Gimian <fgimiansoftware@gmail.com>"
+    "{{{ author.name }}} <{{{ author.email }}}>"
   ],
-  "description": "A complete and carefully designed template for use with the Flask web framework",
-  "license": "MIT",
+  "description": "{{{ application.description }}}",
+  "license": "{{{ application.license }}}",
   "ignore": [
     "**/.*",
     "node_modules",

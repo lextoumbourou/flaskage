@@ -1,17 +1,17 @@
 extends layout
-title = "Flaskage"
+title = "{{{ application.friendly_name }}}"
 block append body
   .site-wrapper
     .site-wrapper-inner
       .cover-container
         .inner.cover
-          h1.cover-heading Flaskage
-          img#flaskage(src=url_for('static', filename='img/flaskage.png'))
+          h1.cover-heading {{{ application.friendly_name }}}
+          img#logo(src=url_for('static', filename='img/flaskage.png'))
           p.lead.
-            A complete and carefully designed template for use with the Flask web
-            framework
+            {{{ application.description }}}
           p.lead
-            a.btn.btn-lg.btn-default(href="https://github.com/fgimian/flaskage") Learn more
+            a.btn.btn-lg.btn-default(href="https://github.com/fgimian/flaskage").
+              Learn more about Flaskage
         .mastfoot
           .inner
             p

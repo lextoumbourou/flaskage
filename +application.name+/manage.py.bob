@@ -1,16 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+{{% if application.comments %}}
 """
-    flaskage.manage
-    ~~~~~~~~~~~~~~~
+    {{{ application.name }}}.manage
+    ~~~~~~~
 
     The main script used to manage all aspects relating to the application
     including configuration, database migration, assets, running the
     development server and so on.
 
-    :copyright: (c) 2014 Fotis Gimian.
-    :license: MIT, see LICENSE for more details.
+    :copyright: (c) {{{ application.year }}} {{{ author.name }}}.
+    :license: {{{ application.license }}}, see LICENSE for more details.
 """
+{{% endif %}}
 import os
 import fnmatch
 import sys

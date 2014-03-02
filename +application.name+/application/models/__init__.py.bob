@@ -1,7 +1,8 @@
+{{% if application.comments %}}
 # -*- coding: utf-8 -*-
 """
-    flaskage.application.models
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {{{ application.name }}}.application.models
+    ~~~~~~~~~~~~~~~~~~~
 
     Here you can create a number of files each containing model definitions
     via the SQLAlchemy ORM.
@@ -115,6 +116,7 @@
         def __repr__(self):
             return '<Post %r>' % self.title
 
-    :copyright: (c) 2014 Fotis Gimian.
-    :license: MIT, see LICENSE for more details.
+    :copyright: (c) {{{ application.year }}} {{{ author.name }}}.
+    :license: {{{ application.license }}}, see LICENSE for more details.
 """
+{{% endif %}}

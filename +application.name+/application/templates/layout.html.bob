@@ -29,8 +29,8 @@
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
     <!-- Coffeescript -->
-    {% assets filters="coffeescript,uglifyjs", output="js/flaskage.js",
-              "coffee/flaskage.coffee" %}
+    {% assets filters="coffeescript,uglifyjs", output="js/{{{ application.name }}}.js",
+              "coffee/{{{ application.name }}}.coffee" %}
       <script src="{{ ASSET_URL }}"></script>
     {% endassets %}
   </body>

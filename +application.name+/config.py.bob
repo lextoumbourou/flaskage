@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
+{{% if application.comments %}}
 """
-    flaskage.config
-    ~~~~~~~~~~~~~~~
+    {{{ application.name }}}.config
+    ~~~~~~~
 
     Configuration for the various environments where the application may run.
 
-    :copyright: (c) 2014 Fotis Gimian.
-    :license: MIT, see LICENSE for more details.
+    :copyright: (c) {{{ application.year }}} {{{ author.name }}}.
+    :license: {{{ application.license }}}, see LICENSE for more details.
 """
+{{% endif %}}
 import os
 
 AVAILABLE_CONFIGS = {

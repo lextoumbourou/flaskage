@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+{{% if application.comments %}}
+"""
+    {{{ application.name }}}.application.views.home
+    ~~~~~~~~~~~~~~~~~~~~~~~
+
+    All views related to the home blueprint.
+
+    :copyright: (c) {{{ application.year }}} {{{ author.name }}}.
+    :license: {{{ application.license }}}, see LICENSE for more details.
+"""
+{{% endif %}}
+from flask import Blueprint, render_template
+
+mod = Blueprint('{{{ application.name }}}', __name__)
+
+
+@mod.route('/')
+def index():
+    return render_template('index.html')
+
+
+@mod.route('/pyjade')
+def index_pyjade():
+    return render_template('index.jade')

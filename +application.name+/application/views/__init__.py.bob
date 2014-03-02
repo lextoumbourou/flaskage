@@ -1,7 +1,8 @@
+{{% if application.comments %}}
 # -*- coding: utf-8 -*-
 """
-    flaskage.application.views
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    {{{ application.name }}}.application.views
+    ~~~~~~~~~~~~~~~~~~
 
     Here you can create a number of files each containing a set of views
     which are grouped by Flask Blueprints.  Each set of views may be
@@ -58,6 +59,7 @@
 
     users = User.query.all()
 
-    :copyright: (c) 2014 Fotis Gimian.
-    :license: MIT, see LICENSE for more details.
+    :copyright: (c) {{{ application.year }}} {{{ author.name }}}.
+    :license: {{{ application.license }}}, see LICENSE for more details.
 """
+{{% endif %}}

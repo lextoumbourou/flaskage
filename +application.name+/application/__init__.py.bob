@@ -1,16 +1,18 @@
 # -*- coding: utf-8 -*-
+{{% if application.comments %}}
 """
-    flaskage.application
-    ~~~~~~~~~~~~~~~~~~~~
+    {{{ application.name }}}.application
+    ~~~~~~~~~~~~
 
     This module initialises all required Flask extensions and provides
     the create_app using application factory function.  See the page at
     http://flask.pocoo.org/docs/patterns/appfactories/ for further details
     relating to Flask application factories.
 
-    :copyright: (c) 2014 Fotis Gimian.
-    :license: MIT, see LICENSE for more details.
+    :copyright: (c) {{{ application.year }}} {{{ author.name }}}.
+    :license: {{{ application.license }}}, see LICENSE for more details.
 """
+{{% endif %}}
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.migrate import Migrate
@@ -62,10 +64,10 @@ def create_app(config):
     #     return render_template("404.html"), 404
 
     # Import and register Blueprints
-    from .views import flaskage
+    from .views import home
     # from .views import module1
     # from .views import module2
-    app.register_blueprint(flaskage.mod)
+    app.register_blueprint(home.mod)
     # app.register_blueprint(module1.mod)
     # app.register_blueprint(module2.mod)
 

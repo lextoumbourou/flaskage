@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
+{{% if application.comments %}}
 """
-    flaskage.tests
-    ~~~~~~~~~~~~~~
+    {{{ application.name }}}.tests
+    ~~~~~~
 
     The top level test class definition which may be used for defining
     your own application tests.
 
-    :copyright: (c) 2014 Fotis Gimian.
-    :license: MIT, see LICENSE for more details.
+    :copyright: (c) {{{ application.year }}} {{{ author.name }}}.
+    :license: {{{ application.license }}}, see LICENSE for more details.
 """
+{{% endif %}}
 from flask.ext.testing import TestCase
 
 from application import create_app, db
