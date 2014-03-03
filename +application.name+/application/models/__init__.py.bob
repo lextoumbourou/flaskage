@@ -1,4 +1,4 @@
-{{% if application.comments %}}
+{{% if source_code.comments %}}
 # -*- coding: utf-8 -*-
 """
     {{{ application.name }}}.application.models

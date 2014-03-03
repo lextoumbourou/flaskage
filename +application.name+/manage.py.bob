@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-{{% if application.comments %}}
+{{% if source_code.comments %}}
 """
     {{{ application.name }}}.manage
     ~~~~~~~

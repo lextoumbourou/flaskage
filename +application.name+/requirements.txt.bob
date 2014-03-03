@@ -10,6 +10,6 @@ Flask-WTF==0.9.4
 pyjade==2.1.0
 Markdown==2.4
 flake8==2.1.0
-{{% if deployment.older_python %}}
+{{% if source_code.older_python %}}
 unittest2==0.5.1
 {{% endif %}}

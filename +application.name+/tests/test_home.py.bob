@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-{{% if application.comments %}}
+{{% if source_code.comments %}}
 """
     {{{ application.name }}}.tests.test_{{{ application.name }}}
     ~~~~~~~~~~~~
